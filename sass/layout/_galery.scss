@@ -1,0 +1,124 @@
+/*================PORTFOLIO==============*/
+/*==========GALERY FOR PORTFOLIO=========*/
+.galery {
+  /*____galery-btn____ */
+  &__btn-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 34px;
+  }
+  &__btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: $color-dark-white;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background: $color-sacondary;
+      color: $color-white;
+      border-radius: 4px;
+    }
+    &:not(last-child) {
+      margin-right: 8px;
+    }
+  }
+  /*___end galery-bt___ */
+  /* ______GALERY_ITEM_______ */
+  &__portfolio {
+    margin-bottom: 64px;
+  }
+  &__card-list {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__card-item {
+    width: 370px;
+  }
+  &__card-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  &__item {
+    display: block;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__card-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+  &__footer-card {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+  }
+  &__name {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+
+    color: $color-primary;
+  }
+  &__category {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+
+    color: $color-grey;
+  }
+}
+/*____OVERLAY___*/
+.galery__card-item:hover .overlay {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0%);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(33, 150, 243, 0.9);
+  
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    transform: translateY(100%);
+}
+.text-overlay {
+  display: flex;
+  align-items: center;
+  width: 322px;
+  height: 168px;
+  margin: 63px 24px;
+  font-weight: 400;
+  line-height: 1.555;
+
+  letter-spacing: 0.03em;
+  color: $color-white;
+}
+/*==========END GALERY FOR PORTFOLIO=========*/

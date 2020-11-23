@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+

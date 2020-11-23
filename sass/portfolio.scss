@@ -1,0 +1,13 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+// components
+@import "./base/common";
+@import "./components/logo";
+@import "./components/contanier";
+// layout
+@import "./layout/header";
+@import "./layout/galery";
+// footer
+@import "./layout/footer_adress-and-join";
+@import "./layout/footer_mailing";
+

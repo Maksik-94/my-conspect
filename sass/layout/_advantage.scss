@@ -1,0 +1,53 @@
+/*=========ADVANTAGE-ПРЕМУЩЕСТВО=========*/
+  /*____________ADVANTAGE-ITEM____________*/
+.advantage{
+  &__list {
+    display: flex;
+    margin-top: 94px;
+  }
+  &__card {
+    width: 270px;
+    height: 251px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__heading {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 10px;
+    width: 270px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+  &__text {
+    width: 270px;
+    height: 101px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: $color-grey;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.svg-advantage {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  & svg {
+    width: 70px;
+  }
+}
+/*=======END ADVANTAGE-ПРЕМУЩЕСТВО========*/

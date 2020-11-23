@@ -1,0 +1,39 @@
+.heading-main {
+  /*___Ззаголовки____ */
+  text-align: center;
+  height: 42px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  color: $color-primary;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.166;
+  }
+}
+
+
+
+
+
+  // }
+  // .advantage & {
+  //   display: none;
+  //   color: transparent;
+  // }
+  // .service & {
+  //   margin-top: 94px;
+  //   margin-bottom: 50px;
+  // }
+  // .team & {
+  //   padding-top: 94px;
+  //   padding-bottom: 50px;
+  // }

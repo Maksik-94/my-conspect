@@ -1,0 +1,60 @@
+/*============FOOTER-ПОДВАЛ==============*/
+.footer {
+  background-color: #2f303a;
+  & a {
+    color: $color-white;
+  }
+  &__item-adress {
+    font-family: $main-font;
+    color: $color-white;
+  }
+  &__adress {
+    padding-bottom: 9px;
+    margin-bottom: 54px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $color-white;
+    width: 232px;
+  }
+}
+.adress-link,
+.contact {
+  padding-bottom: 9px;
+}
+.adress-link a {
+  color: var(--color-white);
+}
+.contact a {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* ______JOIN-LINKS______ */
+.join-links {
+  margin-left: 70px;
+  margin-right: 93px;
+  width: 206px;
+}
+.join {
+  /*___join-присоеденяйтесь___*/
+  margin-top: 72px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 100%;
+  color: $color-white;
+}
+@import "../components/social-links";
+// .social-list-link {
+//   display: flex;
+//   margin-top: 20px;
+// }
+// .social-link {
+//   margin-right: 10px;
+//   background: rgba(255, 255, 255, 0.1);
+// }
+/*____end social-list____*/
+/* ______end adress______ */
