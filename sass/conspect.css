@@ -1,0 +1,105 @@
+@charset "UTF-8";
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.contanier {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .contanier {
+    width: 480px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contanier {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contanier {
+    width: 100%;
+  }
+}
+
+/*_____end web-studio_____*/
+/*==============END OTHERS=========*/
+/*=============HEADER ШАПКА========*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px 15px;
+  width: 100%;
+  height: 100px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 253, 253, 0.6)), to(rgba(223, 226, 255, 0.5))), url(/abstract-background-1024x273.jpg);
+  background: linear-gradient(rgba(253, 253, 253, 0.6), rgba(223, 226, 255, 0.5)), url(/abstract-background-1024x273.jpg);
+  border-radius: 10px;
+}
+
+.contact {
+  margin-right: 40px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+}
+
+.nav a {
+  color: black;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 100px;
+}
+
+/*___________NAVIGATION________ */
+/*# sourceMappingURL=conspect.css.map */
