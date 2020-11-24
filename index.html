@@ -6,466 +6,415 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"/>
-    <link rel="stylesheet" href="css/main.min.css" />
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/sass/conspect.css" />
     <title>Conspect</title>
   </head>
   <body>
-  <header class="header">
-    <div class="contanier">
-        <nav class="navigation">
-            <a class="webstudio" href="./index.html">
-            <span class="web">Web</span>Studio</a>
-            <button class="header__btn" type="button" aria-expanded="false" data-menu-button>
-              <svg class="header__btn-img" aria-label="Переключатель мобильного меню">
-                <use class="header__btn-menu" href="./images/sprite.svg#icon-menubtn"></use>
-                <use class="header__btn-close" href="./images/sprite.svg#icon-closebtn"></use>
-              </svg>
-            </button>
-            <div class="header-box">
-            <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="current" href="./index.html">Студия</a>
-            </li>
-            <li class="navigation__item">
-              <a href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="navigation__item">
-              <a href="./index.html">Контакты</a>
-            </li>
-          </ul>
-        <!--__________adress-contact___________-->
-        <address class="adress">
-          <ul class="contact-list">
-            <li class="navigation__item">
-              <a href="tel:380961111111">
-                <svg>
-                  <use href="./images/sprite.svg#tel"></use></svg
-                >+380961111111</a>
-            </li>
-            <li class="navigation__item">
-              <a href="mailto:info@devstudio.com">
-                <svg>
-                  <use href="./images/sprite.svg#mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        </div>
-      </nav>
-    </div>
-</header>
-    <main>
-      <!--==============HERO-ГЕРОЙ===============--
-      <section class="hero">
+  <div class="contanier">
+    <header class="header">
+    <a class="logo" href="./index.html"><img src="" alt=""></a>
+    <ul class="contact">
+      <li class="">
+        <a href="tel:48577350949">
+       <!--<svg>
+       <use href="./images/sprite.svg#tel"></use></svg> -->
+       +48577350949</a></li>
+     <li class="">
+       <a href="mailto:info@devstudio.com">
+       <!-- <svg>
+       <use href="./images/sprite.svg#mail"></use>
+       </svg> -->
+       nezhevenkomax@gmail.com</a></li>
+    </ul>
+    <ul class="nav">
+      <li class="nav__item"><a class="nav_item" href="#conspect">Помощник</a></li>
+      <li class="nav__item"><a class="nav_item" href="#webinar">Вебинары</a></li>
+      <li class="nav__item"><a class="nav_item" href="#other">Интересности</a></li>
+    </header>
+  </div>
+      <main>
+      <section id="conspect" class="conspect">
         <div class="contanier">
-          <h1 class="hero_title">
-            Эффективные решения <br />для вашего бизнеса
-          </h1>
-          <button class="button" type="button" data-modal-open>
-            Заказать услугу
-          </button>
-        </div>
-      </section>
-      <!--=========ADVANTAGE-ПРЕМУЩЕСТВО=========-->
-      <!--_____________ADVANTAGE-ITEM____________--
-      <section class="advantage">
-        <div class="contanier">
-          <h2 class="heading-main">Наши преимущества</h2>
-          <ul class="advantage__list">
-            <li class="advantage__card">
-              <div class="svg-advantage">
-                <svg>
-                  <use href="./images/sprite.svg#antenna"></use>
-                </svg>
-              </div>
-              <h3 class="advantage__heading">Внимание к деталям</h3>
-              <p class="advantage__text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li class="advantage__card">
-              <div class="svg-advantage">
-                <svg>
-                  <use href="./images/sprite.svg#clock" width="70px"></use>
-                </svg>
-              </div>
-              <h3 class="advantage__heading">Пунктуальность</h3>
-              <p class="advantage__text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li class="advantage__card">
-              <div class="svg-advantage">
-                <svg>
-                  <use href="./images/sprite.svg#diagram" width="70px"></use>
-                </svg>
-              </div>
-              <h3 class="advantage__heading">Планирование</h3>
-              <p class="advantage__text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li class="advantage__card">
-              <div class="svg-advantage">
-                <svg>
-                  <use href="./images/sprite.svg#astronaut" width="70px"></use>
-                </svg>
-              </div>
-              <h3 class="advantage__heading">Современные технологии</h3>
-              <p class="advantage__text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!--=============SERVICE-УСЛУГИ============--
-      <section class="service">
-        <div class="contanier">
-          <h2 class="heading-main">Чем мы занимаемся</h2>
-          <ul class="service__list">
-            <li class="service__img">
-              <img
-                src="./images/img.jpg"
-                alt="Десктопные приложения"
-                width="370"
-              />
-            </li>
-            <li class="service__img">
-              <img
-                src="./images/img-1.jpg"
-                alt="Мобильные приложения"
-                width="370"
-              />
-            </li>
-            <li class="service__img">
-              <img
-                src="./images/img-2.jpg"
-                alt="Дизайнерские решения"
-                width="370"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!--=============TEAM-КОМАНДА==============--
-      <section class="team">
-        <div class="container">
-          <h2 class="heading-main">Наша команда</h2>
-          <ul class="team__list">
-            <li class="team__card-items">
-              <img
-                src="./images/img-3.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
-              <h3 class="team__name">Игорь Демьяненко</h3>
-              <p class="team__post">Product Designer</p>
-              <div class="links">
-                <a class="social-link" href="https://www.instagram.com/">
-                  <svg>
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-                <a class="social-link" href="https://www.facebook.com/">
-                  <svg>
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-                <a class="social-link" href="https://www.twitter.com">
-                  <svg>
-                    <use href="./images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-                <a class="social-link" href="https://www.linkedin.com">
-                  <svg>
-                    <use href="./images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-            <li class="team__card-items">
-              <img src="./images/img-4.jpg" alt="Ольга Репина" width="270" />
-              <h3 class="team__name">Ольга Репина</h3>
-              <p class="team__post">Frontend Developer</p>
-              <div class="links">
-                <a class="social-link" href="https://www.instagram.com/">
-                  <svg>
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-                <a class="social-link" href="https://www.facebook.com/">
-                  <svg>
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-                <a class="social-link" href="https://www.twitter.com">
-                  <svg>
-                    <use href="./images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-                <a class="social-link" href="https://www.linkedin.com">
-                  <svg>
-                    <use href="./images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-            <li class="team__card-items">
-              <img src="./images/img-5.jpg" alt="Николай Тарасов" width="270" />
-              <h3 class="team__name">Николай Тарасов</h3>
-              <p class="team__post">Marketing</p>
-              <div class="links">
-                <a class="social-link" href="https://www.instagram.com/">
-                  <svg>
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-                <a class="social-link" href="https://www.facebook.com/">
-                  <svg>
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-                <a class="social-link" href="https://www.twitter.com">
-                  <svg>
-                    <use href="./images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-                <a class="social-link" href="https://www.linkedin.com">
-                  <svg>
-                    <use href="./images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-            <li class="team__card-items">
-              <img src="./images/img-6.jpg" alt="Михаил Ермаков" width="270" />
-              <h3 class="team__name">Михаил Ермаков</h3>
-              <p class="team__post">UI Designer</p>
-              <ul class="links">
-                <li>
-                  <a class="social-link" href="https://www.instagram.com/">
-                    <svg>
-                      <use href="./images/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="social-link" href="https://www.facebook.com/">
-                    <svg>
-                      <use href="./images/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="social-link" href="https://www.twitter.com">
-                    <svg>
-                      <use href="./images/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="social-link" href="https://www.linkedin.com">
-                    <svg>
-                      <use href="./images/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!--================CLIENTS================--
-      <section class="client">
-        <div class="contanier">
-          <h4 class="heading-main">Постоянные клиенты</h4>
-          <ul class="clients">
-            <li class="card-client">
-              <a href="">
-                <svg>
-                  <use href="./images/sprite.svg#client1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="card-client">
-              <a href="">
-                <svg>
-                  <use href="./images/sprite.svg#client2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="card-client">
-              <a href="">
-                <svg>
-                  <use href="./images/sprite.svg#client3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="card-client">
-              <a href="">
-                <svg>
-                  <use href="./images/sprite.svg#client4"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="card-client">
-              <a href="">
-                <svg>
-                  <use href="./images/sprite.svg#client5"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="card-client">
-              <a href="">
-                <svg>
-                  <use href="./images/sprite.svg#client6"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <!--=============FOOTER-ПОДВАЛ=============--
-    <footer class="footer">
-      <div class="contanier">
-        <address class="footer__item-adress">
-          <div class="adress-list">
-            <a class="webstudio" href="./index.html">
-              <span class="web">Web</span>Studio</a>
-            <ul class="footer__adress">
-              <li class="adress-link">
-                <a href="https://goo.gl/maps/2c2kjHNSKJ136nSG8" target="_blank">
-                  г. Киев, пр-т Леси Украинки, 26
-                </a>
+          <h1 class="title">Помощник</h1>
+          <a href="https://app.slack.com/client/T0172S6BMPX/C016XFNB4S2">Slack</a>
+          <div class="conspect__box">
+            <ul class="conspect__list">
+              <li class="conspect__item">
+                <a class="link" href="http://fecore.net.ua/html-css/v1/docs/lesson-01/intro/">Conspectus GOit - 1</a>
               </li>
-              <li class="contact">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="conspect__item">
+                <a class="link" href="https://material.goit.ua/">Conspectus GOit - 2</a>
               </li>
-              <li class="contact">
-                <a href="tel:380961111111"> +380961111111 </a>
+              <li class="conspect__item">
+                <a class="link" href="https://javarush.ru/quests/lectures/questharvardcs50.level00.lecture05">Wideolection in Garvard</a>
+              </li>
+              <li class="conspect__item">
+                <a class="link" href="http://sadcitizen.me/code-guide/"><span class="remark">Синтаксис</span> написания <span class="remark">HTML & CSS</span></a>
+              </li>
+              <li class="conspect__item">
+                <a class="link" href="http://htmlbook.ru/">HTML Book.ru</a>
+              </li>
+              <li class="conspect__item">
+                <a class="link" href="http://www.astro.spbu.ru/staff/afk/Teaching/Help/Tegs.htm">Main tags table in HTML</a>
+              </li>
+              <li class="conspect__item">
+                <a class="link" href="https://fructcode.com/ru/courses/html-and-css/"><span class="remark">КУРС HTML и CSS</span></a>
+              </li>
+              <li class="conspect__item">
+                <a class="link" href="https://fructcode.com/ru/courses/javascript-and-jquery/"><span class="remark">Курс JS</span>*</a>
+              </li>
+              <li class="conspect__item">
+                <a class="link" href="https://fructcode.com/ru/courses/modern-javascript/intro-about-modern-javascript/"><span class="remark">КУРС MODERN JAVASCRIPT</span></a>
+              </li>
+              <li class="conspect__item">
+                <a class="link" href="https://blog.myrusakov.ru/freejs.html?email=nezhevenkomax%40gmail.com"><span class="remark">JS Wideolection from Rusakov</span></a>
+              </li>
+              <li class="conspect__item">
+                <a class="link" href="https://learn.javascript.ru/screencast/react"><span class="remark">Main in REACTjs</span></a>
+              </li>
+              <li class="conspect__item">
+                <a class="link" href="https://www.w3schools.com/js/default.asp">JavaScript Tutorial</a>
+              </li>
+              <li class="conspect__item">
+                <a class="link" href="https://sass-scss.ru/documentation/">SASS-SCSS documentation</a>
               </li>
             </ul>
           </div>
-        </address>
-        <!--____JOIN-LINKS--
-        <div class="join-links">
-          <h2 class="join">ПРИСОЕДИНЯЙТЕСЬ</h2>
-          <ul class="social-list-link">
-            <li>
-              <a class="social-link" href="https://www.instagram.com/">
-                <svg>
-                  <use href="./images/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-link" href="https://www.facebook.com/">
-                <svg>
-                  <use href="./images/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-link" href="https://www.twitter.com">
-                <svg>
-                  <use href="./images/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-link" href="https://www.linkedin.com">
-                <svg>
-                  <use href="./images/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!--____MAILING____--
-        <div class="mailing">
-          <h2 class="mailing-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-          <div class="mailing-mail">
-            <input type="email" class="mailing-contact" placeholder="E-mail" />
-            <button type="submit" class="mailing-btn">
-              Подписаться
-              <svg class="icon-send">
-                <use href="./images/sprite.svg#send"></use>
-              </svg>
-            </button>
+          <div class="conspect__service">
+            <h1 class="title">Сервисы</h1>
+            <ul class="conspect__list">
+              <li class="conspect__item">Validators
+                <ul>
+                  <li><a href="https://validator.w3.org/nu/#textarea" class="link">Validator HTML</a></li>
+                  <li><a href="https://validator.w3.org/unicorn/?ucn_task=full-css&ucn_lang=ru" class="link">Validator CSS</a></li>
+                </ul>
+              </li>
+              <li class="conspect__item">Оптимизация растровой графики (jpg, png, webp)
+                <ul>
+                  <li><a href="https://squoosh.app/" class="conspect__item">Squoosh</a></li>
+                  <li><a href="https://imagecompressor.com/ru/" class="conspect__item">Optimizila</a></li>
+                  <li><a href="https://tinypng.com/" class="conspect__item">TinyPNG</a></li>
+                </ul>
+              </li>
+              <li class="conspect__item"><a href="https://jakearchibald.github.io/svgomg/" class="link">Оптимизация векторной графики (svg)</a></li>
+              <li class="conspect__item"><a href="https://icomoon.io/" class="link">Icomoon - sprints</a></li>
+              <li class="conspect__item"><a href="https://unminify.com/" class="link">Разминифицирование (svg, html, css, js...)</a></li>
+              <li class="conspect__item">Сервисы CSS
+                <ul>
+                <li>
+                  Нормалайз -
+                  <a class="link" href="https://github.com/sindresorhus/modern-normalize">modern-normalize</a>
+                  <ul>
+                    <li>
+                      <a class="link" href="https://cdnjs.com/libraries/modern-normalize">cdnjs - link</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Скрытие элемента
+                  <ul>
+                    <li>
+                      <a class="link" href="https://github.com/Dizardmk/useful-links/blob/master/css/hidden.md">hidden</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Свойства шрифта -
+                  <a class="link" href="http://fecore.net.ua/html-css/v1/docs/lesson-04/font-props">конспект</a>
+                  <ul>
+                    <li>
+                      <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#Common_weight_name_mapping">названия значений font-weight</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Нестандартные шрифты -
+                  <a class="link" href="http://fecore.net.ua/html-css/v1/docs/lesson-04/google-fonts">конспект</a>
+                  <ul>
+                    <li>
+                      <a class="link" href="https://fonts.google.com/">google fonts</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Селекторы -
+                  <a class="link" href="http://fecore.net.ua/html-css/v1/docs/lesson-03/selectors">конспект</a>
+                  <ul>
+                    <li>
+                      <a class="link" href="https://github.com/yoksel/common-words">common-words - cлова в CSS-классах
+                      </a>
+                    </li>
+                    <li>
+                      <a class="link" href="https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md">dictionary - словарь терминов</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Работа с цветом -
+                  <a class="link" href="http://fecore.net.ua/html-css/v1/docs/lesson-03/color">конспект</a>
+                  <ul>
+                    <li>
+                      <a class="link" href="https://htmlcolorcodes.com/color-picker/">htmlcolorcodes - HTML цвета</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Структурные псевдоклассы -
+                  <a class="link" href="http://fecore.net.ua/html-css/v1/docs/lesson-05/pseudoclasses">конспект</a>
+                  <ul>
+                    <li>
+                      <a class="link" href="https://css-tricks.com/examples/nth-child-tester/">nth-child-tester</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Flexbox -
+                  <a class="link" href="http://fecore.net.ua/html-css/v1/docs/lesson-06/intro">конспект</a>
+                  <ul>
+                    <li>
+                      <a class="link" href="http://css-live.ru/wp-content/uploads/2014/10/flexboxsheet-small__5.png">шпаргалка по flexbox</a>
+                    </li>
+                    <li>
+                      <a class="link" href="https://www.outpan.com/app/1b970b008f/flexbox-playground">outpan - flexbox playground</a>
+                    </li>
+                    <li>
+                      <a class="link" href="https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/">scotch - flexbox playground</a>
+                    </li>
+                    <li>
+                      <a class="link" href="https://flexboxfroggy.com/#ru">flexboxfroggy - игра CSS flexbox</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Градиент -
+                  <a class="link" href="http://fecore.net.ua/html-css/v1/docs/lesson-07/gradient">конспект</a>
+                  <ul>
+                    <li>
+                      <a class="link" href="https://cssgradient.io/">cssgradient - генератор градиентов</a>
+                    </li>
+                    <li>
+                      <a class="link" href="https://uigradients.com/">uigradients - подборка градиентов</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Тень элемента -
+                  <a class="link" href="http://fecore.net.ua/html-css/v1/docs/lesson-07/shadow">конспект</a>
+                  <ul>
+                    <li>
+                      <a class="link" href="https://www.cssmatic.com/box-shadow">cssmatic - генератор тени</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Анимация
+                  <ul>
+                    <li>
+                      <a class="link" href="https://animate.style/">animate.css - готовые анимации</a>
+                    </li>
+                    <li>
+                      <a class="link" href="https://cubic-bezier.com/">генератор cubic-bezier</a>
+                    </li>
+                    <li>
+                      <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">свойства которые могут быть анимированы</a>
+                    </li>
+                  </ul>
+                </li>
+                </ul>
+              </li>
+              <li class="conspect_item">Others service
+                <ul>
+                <li class="conspect__item"><a href="https://www.figma.com/files/recent" class="link">Figma</a></li>
+                <li class="conspect__item"><a href="https://www.sassmeister.com/" class="link">Онлайн-компилятор SASS-SCSS</a></li>
+                <li class="conspect__item"><a href="https://codepen.io/pen/" class="link">CodePen</a></li>
+                </ul>
+              </li>
+              <li class="conspect__item"><a href="" class="link"></a></li>
+            </ul>
           </div>
         </div>
-      </div>
-    </footer> -->
-    </main>
-    <!--===============MODAL-BTN==============-->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>
-          <svg><use href="./images/sprite.svg#close"></use></svg>
-        </button>
-        <form action="#" class="modal__form">
-          <h2 class="modal__form-title">
-            Оставьте свои данные, мы вам перезвоним
-          </h2>
-          <label class="modal__form-field">
-            Имя
-            <span class="modal__form-wrapper">
-              <input type="text" name="user-name" class="modal__form-input" />
-              <svg class="modal__form-svg">
-                <use href="./images/sprite.svg#person-black"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="modal__form-field">
-            Телефон
-            <span class="modal__form-wrapper">
-              <input type="tel" name="user-phone" class="modal__form-input" />
-              <svg class="modal__form-svg">
-                <use href="./images/sprite.svg#phone-black"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="modal__form-field">
-            Почта
-            <span class="modal__form-wrapper">
-              <input type="email" name="user-email" class="modal__form-input" />
-              <svg class="modal__form-svg">
-                <use href="./images/sprite.svg#email-black"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="modal__form-field">
-            Комментарий
-            <textarea
-              name="user-message"
-              class="modal__form-message"
-              placeholder="Введите текст "
-            ></textarea>
-          </label>
-          <input
-            type="checkbox"
-            name="user-policy"
-            value="accept-policy"
-            id="check-policy"
-            class="modal__form-policy visually-hidden"/>
-          <label for="check-policy" class="modal__form-policy--label"
-            >Соглашаюсь с рассылкой и принимаю <a href="#">условия договора</a>
-          </label>
+      </section>
+      <section id="webinar" class="webinar">
+        <div class="contanier">
+          <h1 class="title">Записи вебинаров</h1>
+          <div class="webinar__left">
+            <h2 class="text">Олексей Репин</h2>
+            <ul class="webinar__list">
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=yoBQPGBvB3M">Занятие 1 - Основы HTML. Часть 1</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=1sLYawfAY8I">Занятие 2 - Основы HTML. Часть 2</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=U3PJFXMmAKI">Занятие 3 - Основы CSS</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=rO7AcxVbyjw">Занятие 4 - Оформление текста</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=0PTyiSjslqU">Занятие 5 - Блочная модель</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=sAneXsOyR2Y">Занятие 6 - Flexbox</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=kNzo76wi90E">Занятие 7 - Декоративные эффекты и элементы</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=DlSJvMZp5Y0">Занятие 8 - Векторная графика</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=h-nTsQcOnRA">Занятие 9 - Позиционированные элементы</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=5r-9BFbyOPE">Занятие 10 - Переходы и анимация</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=uQEGUpsnqsw">Фпж1</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=yZFg3cuq_LU">Фпж2</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=GKgOOuTL0po">Фпж3</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=K3zhckigZOE">Занятие 11 - Разметка форм</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=E6kLaaQFctU">Кастом чекбоксы</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=NCom0Lu5FEw">Занятие 12 - Стилизация форм</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=RppO3g-QYqY">Дополнительно</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=RuPOp-xL2WI">Занятие 13 - Препроцессор SASS. Часть 1</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=FpU_xyvT8tY">Занятие 14 - Препроцессор SASS. Часть 2</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=rIK8fhO4_2k">Занятие 15 - Адаптивная вёрстка</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=Q34q0WkJqbk">Занятие 16 - Адаптивная графика</a>
+              </li>
+            </ul>
+          </div>
+          <div class="webinar__right">
+            <h2 class="text">Олександр Репета</h2>
+            <ul class="list-main">
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=k6IxRD5BEXY">Занятие 1 - Основы HTML. Часть 1</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=lKAVnNi9ZCM">Занятие 2 - Основы HTML. Часть 2</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=bn9yIxt_rtg">Занятие 3 - Основы CSS</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=KM5r3qtBdxY">Занятие 4 - Оформление текста</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=_StgByWohXQ">Занятие 5 - Блочная модель</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=c32Jb9Ejz4k">Занятие 6 - Flexbox</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=8rDA1NfOqEs">Дополнительно 1</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=XK30eFpeL40">Дополнительно 2</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=VThG4A-4bJQ">Занятие 7 - Декоративные эффекты и элементы</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=GmEY7lL7YXE">Занятие 8 - Векторная графика</a>
+                »
+                <a class="link" href="https://app.schoology.com/course/2603776759/materials/gp/2912141837">Стилизация path</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=K_Jxc8VgSIk">Занятие 9 - Позиционированные элементы</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=wGLls08ReMg">Занятие 10 - Переходы и анимация</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=uQEGUpsnqsw">Фпж1</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=yZFg3cuq_LU">Фпж2</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=GKgOOuTL0po">Фпж3</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=Ssws6DoJ3oY">Занятие 11 - Разметка форм</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=E6kLaaQFctU">Кастом чекбоксы</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=wahf3ZcDxV4">Занятие 12 - Стилизация форм</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=RppO3g-QYqY">Дополнительно</a>
+              </li>
 
-          <button type="submit" class="modal__form-btn">Отправить</button>
-        </form>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=AjzUOmu6DQs">Занятие 13 - Препроцессор SASS</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=QPgbG9WtUsI">Занятие 14 - Методология БЭМ</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=t5hlXeln3go">Занятие 15 - Адаптивная вёрстка</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=Z5lYspOgtrY">Часть 2</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=5-dBlOTvv0A">Занятие 16 - Адаптивная графика</a>
+                »
+                <a class="link" href="https://www.youtube.com/watch?v=kqetzosySSg">Часть 2</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=uEbBpG2UH20">Командная работа с GIT</a>
+              </li>
+              <li>
+                <a class="link" href="https://www.youtube.com/watch?v=mTLw2M_RjCU">Как пользоваться сборщиком</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="other" class="other">
+        <div class="contanier">
+          <h1 class="title">Интересности</h1>
+          <div class="other__box">
+            <ul class="other__list">
+              <li class="other__item"><a href="https://github.com/Maksik-94" class="link">My<span class="remark">Git</span></a></li>
+              <li class="other__item"><a href="https://javarush.ru/" class="link"><span class="remark">JAVA</span>Rash</a></li>
+              <li class="other__item"><a href="https://dou.ua/" class="link">DOU.UA</a></li>
+              <li class="other__item"><a href="https://proglib.io/" class="link">Библиотека програмиста<span class="remark">*</span></a></li>
+              <li class="other__item"><a href="https://tproger.ru/" class="link">Типичный програмист</a></li>
+              <li class="other__item"><a href="https://stackoverflow.com/" class="link">Forum Stackoverflow</a></li>
+              <li class="other__item"><a href="https://habr.com/ru/" class="link">ХАБР</a></li>
+              <li class="other__item"><a href="" class="link"></a></li>
+              <li class="other__item"><a href="https://dev.to/ender_minyard/28-code-tutorials-for-visual-learners-19pl" class="link">32 <span class="remark">руководства по программированию*</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div id="">
+        <div class="contanier">
+          <h1 class="">sweetie</h1>
+          <ul class="">
+            <li class=""><a href="https://proglib.io/p/tetris-na-javascript-razbiraem-vozmozhnosti-yazyka-cherez-geymifikaciyu-2020-11-23" class="link">tetris</a></li>
+            <li class=""></li>
+            <li class=""></li>
+            <li class=""></li>
+            <li class=""></li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </main>
     <script src="./js/menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
   </body>
